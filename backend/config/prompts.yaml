@@ -1,0 +1,78 @@
+cv_extraction: |
+  You are an expert recruitment parser. Analyze the following CV content.
+  Extract details:
+  - name: Candidate name
+  - email: Contact email address
+  - skills: List of specific technical and soft skills.
+  - experience: List of objects containing 'company', 'title', 'duration' (in months/years), and 'description'.
+  - education: List of objects containing 'school', 'degree', and 'year'.
+  
+  Format your response strictly as a JSON object:
+  {{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "skills": ["Python", "Machine Learning", "SQL"],
+    "experience": [{"company": "Tech Corp", "title": "Software Engineer", "duration": "2 years", "description": "Developed API services"}],
+    "education": [{"school": "State University", "degree": "BS Computer Science", "year": "2024"}]
+  }}
+  Do not include markdown blocks or any text other than valid JSON.
+
+job_parsing: |
+  You are an ATS job description parser. Analyze the job listing below.
+  Extract:
+  - title: Job Title
+  - company: Company name
+  - location: Job location
+  - required_skills: List of mandatory technical skills.
+  - nice_to_have: List of preferred but optional skills.
+  - experience_level: Experience requirements (Junior, Mid, Senior).
+  
+  Format your response strictly as a JSON object:
+  {{
+    "title": "Data Scientist",
+    "company": "AI Labs",
+    "location": "San Francisco, CA",
+    "required_skills": ["Python", "PyTorch", "Git"],
+    "nice_to_have": ["Docker", "Kubernetes"],
+    "experience_level": "Mid"
+  }}
+  Do not include markdown blocks or extra characters.
+
+gap_analysis: |
+  You are a career development coach. Compare the candidate's skills with the job requirements.
+  Candidate Skills: {your_skills}
+  Job Requirements: {required_skills}
+  
+  Identify:
+  1. Missing required skills.
+  2. A step-by-step learning roadmap to learn these missing skills (including estimated weeks and resources).
+  
+  Format your response in Markdown, using bullet points for clarity.
+
+interview_tips: |
+  You are a senior tech recruiter. Prepare interview tips for this job candidate.
+  Job Title: {job_title}
+  Company: {company}
+  Candidate Experience: {experience_summary}
+  
+  Generate:
+  - 5 targeted interview questions likely to be asked.
+  - Key talking points from the candidate's CV to use when answering each question.
+  
+  Format your response in Markdown.
+
+salary_estimation: |
+  You are a tech compensation analyst.
+  Estimate the salary range for:
+  Job Title: {job_title}
+  Location: {location}
+  Years of Experience: {years_exp}
+  
+  Provide an estimated annual range (e.g. $90,000 - $110,000) and compare it briefly with market rates.
+  Format your response as a JSON object:
+  {{
+    "estimated_min": 90000,
+    "estimated_max": 110000,
+    "currency": "USD",
+    "explanation": "Brief explanation of market rates..."
+  }}

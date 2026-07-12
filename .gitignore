@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Python / IDE / VSCode config
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local databases and storage for CareerRAG
+storage/cvs/*
+!storage/cvs/.gitkeep
+storage/careerrag.db
+storage/careerrag.db-journal
+storage/chroma_db/

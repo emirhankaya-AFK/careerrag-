@@ -1,0 +1,41 @@
+roles:
+  - title: "Software Engineer"
+    Junior:
+      min: 60000
+      max: 85000
+    Mid:
+      min: 90000
+      max: 125000
+    Senior:
+      min: 130000
+      max: 180000
+  - title: "Data Scientist"
+    Junior:
+      min: 70000
+      max: 95000
+    Mid:
+      min: 100000
+      max: 140000
+    Senior:
+      min: 150000
+      max: 200000
+  - title: "Product Manager"
+    Junior:
+      min: 65000
+      max: 90000
+    Mid:
+      min: 95000
+      max: 130000
+    Senior:
+      min: 140000
+      max: 195000
+default:
+  Junior:
+    min: 50000
+    max: 75000
+  Mid:
+    min: 80000
+    max: 110000
+  Senior:
+    min: 120000
+    max: 160000
