@@ -1,5 +1,7 @@
 # CareerRAG - AI Job Matcher Agent
 
+[English](README.md) | [Türkçe](README_TR.md)
+
 CareerRAG is a CV-to-Job Matching and mock interview preparation system.
 
 ## Setup Instructions
